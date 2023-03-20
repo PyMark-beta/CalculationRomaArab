@@ -1,4 +1,4 @@
-public class FinalCount {
+class FinalCount {
     public int calculation(int operandFirst, int operandSecond, String operator) throws OperationException {
         int result = 0;
 
@@ -12,7 +12,7 @@ public class FinalCount {
             case "/":
                 result = operandFirst / operandSecond;
                 break;
-            case "x":
+            case "*":
                 result = operandFirst * operandSecond;
                 break;
             default:

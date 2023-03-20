@@ -1,4 +1,4 @@
-public class RunArray {
+class RunArray {
     static String[] romaNumber = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
 
     public int iterationArray(String str) {

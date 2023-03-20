@@ -1,4 +1,4 @@
-public class CountArab {
+class CountArab {
     public String countArab(String operandFirst, String operandSecond, String operation) throws OperationException {
 
         FinalCount finalCount = new FinalCount();
