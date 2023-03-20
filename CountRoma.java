@@ -17,9 +17,8 @@ public class CountRoma {
         RunArray runArray = new RunArray();
         int operandFirstRoma = runArray.iterationArray(operandFirst);
         int operandSecondRoma = runArray.iterationArray(operandSecond);
-        if (operation.equals("-") && operandSecondRoma >= operandFirstRoma) {
-            throw new OperationException("В римской системе нет отрицательных чисел и нуля");
-        } else if (operation.equals("/") && operandSecondRoma >= operandFirstRoma) {
+        if (operation.equals("-") && operandSecondRoma >= operandFirstRoma ||
+                operation.equals("/") && operandSecondRoma >= operandFirstRoma) {
             throw new OperationException("В римской системе нет отрицательных чисел и нуля");
         } else {
             return romaResult[finalCount.calculation(operandFirstRoma, operandSecondRoma, operation)];
